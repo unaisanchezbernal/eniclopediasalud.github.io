@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Enciclopedia de Salud|Buscador</title>
+</head>
+<body>
+ <h1>Mini Enciclopedia de Salud</h1>
+    <h1>Buscador</h1>
+<nav>
+	<a href="../index.html">Indice-Enciclopedia de Salud</a>
+    </nav>
+    <figure>
+      <img src="../logo.png" alt="Logotipo de la enciclopedia" style="width: 200px; height: auto;" onclick="window.location.href='../index.html';">
+      <figcaption>Logotipo de la enciclopedia de salud</figcaption>
+    </figure>
+    <form action="buscadorrespuesta.html" method="GET">
+        <fieldset> 
+            <legend><strong>Búsqueda avanzada </strong></legend>
+
+            <label for="Descripción">Descripción: </label>
+        <input type="text" id="Descripción" name="Descripción" ><br><br>
+
+        <label for="Causas">Causas: </label>
+        <input type="text" id="Causas" name="Causas" ><br><br>
+
+        <label for="Síntomas">Síntomas: </label>
+        <input type="text" id="Síntomas" name="Síntomas" ><br><br>
+
+        <label for="Purebas">Purebas y exámenes: </label>
+        <input type="text" id="Purebas" name="Purebas" ><br><br>
+
+        <label for = "Tratamiento"> Tratamiento: </label>
+        <input type="text" id="Tratamiento" name="Tratamiento"> <br><br>
+
+        <label for = "Expectativas"> Expectativas: </label>
+        <input type="text" id="Expectativas" name="Expectativas"> <br><br>
+
+
+        </fieldset>
+
+        <input type="submit" value="Buscar">
+        <input type="reset" value="Reestablecer">
+    </form>
+<br>
+<a href="../index.html">Volver a la página principal</a>
+<footer>
+    <p><i>&copy; Enciclopedia de Salud. Todos los derechos reservados.</i></p>
+    <p><i>Creado por Jorge y Unai</i></p>
+</footer>
+</body>
+</html>

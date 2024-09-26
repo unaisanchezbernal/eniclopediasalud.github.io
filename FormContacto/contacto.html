@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Enciclopedia de Salud|Formulario de Contacto</title>
+</head>
+<body>
+ <h1>Mini Enciclopedia de Salud</h1>
+    <h1>Contacto</h1>
+<nav>
+	<a href="../index.html">Indice-Enciclopedia de Salud</a>
+    </nav>
+    <figure>
+      <img src="../logo.png" alt="Logotipo de la enciclopedia" style="width: 200px; height: auto;" onclick="window.location.href='../index.html';">
+      <figcaption>Logotipo de la enciclopedia de salud</figcaption>
+    </figure>
+    <form action="contactoRespuesta.html" method="GET">
+        <label for="asunto">Asunto: *</label>
+        <input type="text" id="asunto" name="asunto" required><br><br>
+
+        <label for="comentario">Comentario o pregunta: *</label><br>
+        <textarea id="comentario" name="comentario" rows="5" cols="40" required></textarea><br><br>
+
+        <label for="yo_soy">Yo soy: *</label>
+        <select id="yo_soy" name="yo_soy" required>
+            <option value="paciente">Paciente</option>
+            <option value="cientifico">Científico</option>
+            <option value="medico">Médico</option>
+            <option value="educador">Educador</option>
+            <option value="fabricante">Fabricante</option>
+            <option value="periodista">Periodista</option>
+        </select><br><br>
+
+        <label for="fecha_nacimiento">Fecha de nacimiento: *</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <fieldset required>
+            <legend>Sexo: *</legend>
+            <input type="radio" id="hombre" name="sexo" value="hombre" required>
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="mujer" name="sexo" value="mujer" required>
+            <label for="mujer">Mujer</label><br>
+            <input type="radio" id="otro" name="sexo" value="otro" required>
+            <label for="otro">Otro</label>
+        </fieldset><br>
+
+        <label for="email">Correo electrónico: *</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="checkbox" id="mas_informacion" name="mas_informacion" >
+        <label for="mas_informacion">Deseo recibir más información</label><br><br>
+	
+	<input type="checkbox" id="terminos_y_condiciones" name="terminos_y_condiciones" required>
+        <label for="terminos_y_condiciones">Acepto los términos y condiciones de uso</label><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reestablecer">
+    </form>
+<br>
+<a href="../index.html">Volver a la página principal</a>
+<footer>
+    <p><i>&copy; Enciclopedia de Salud. Todos los derechos reservados.</i></p>
+    <p><i>Creado por Jorge y Unai</i></p>
+</footer>
+</body>
+</html>
